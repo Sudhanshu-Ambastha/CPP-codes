@@ -52,11 +52,12 @@ int main(){
         cout << "Starting with Result: 0" << endl;
     }
 
-    while (uc == 'y' || uc == 'Y'){
+    while (uc == 'y'){
         cout << "Do you want to continue? (Y/N): ";
         cin >> uc;
+        uc = tolower(uc);
 
-        if (uc == 'y' || uc == 'Y'){
+        if (uc == 'y'){
             cout << "Enter next operator (+,-,*,/): ";
             cin >> op;
             cout << "Enter next no.: ";
@@ -67,6 +68,8 @@ int main(){
             }
         }
     }
+
+    cout << "Final Result = " << result << endl;
 
     return 0;
 }
