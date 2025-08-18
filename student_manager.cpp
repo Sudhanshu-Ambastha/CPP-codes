@@ -39,37 +39,15 @@ public:
         cgpa = 6.0;
     }
 
-    int getEnrollmentNo() const {
-        return enrollmentNo;
-    }
+    int getEnrollmentNo() const {return enrollmentNo;}
+    const char* getName() const {return name;}
+    const char* getBranch() const {return branch;}
+    double getCGPA() const {return cgpa;}
 
-    const char* getName() const {
-        return name;
-    }
-
-    const char* getBranch() const {
-        return branch;
-    }
-
-    double getCGPA() const {
-        return cgpa;
-    }
-
-    void setEnrollmentNo(int en) {
-        enrollmentNo = en;
-    }
-
-    void setName(const char* n) {
-        copy_string(name, n, 50);
-    }
-
-    void setBranch(const char* b) {
-        copy_string(branch, b, 10);
-    }
-
-    void setCGPA(double c) {
-        cgpa = c;
-    }
+    void setEnrollmentNo(int en) {enrollmentNo = en;}
+    void setName(const char* n) {copy_string(name, n, 50);}
+    void setBranch(const char* b) {copy_string(branch, b, 10);}
+    void setCGPA(double c) {cgpa = c;}
 
     void showDetails() const {
         cout << "-------------------------" << endl;
