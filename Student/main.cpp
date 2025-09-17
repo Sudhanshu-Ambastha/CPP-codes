@@ -2,24 +2,8 @@
 #include <vector>
 #include "expense.h"
 #include "file_handler.h"
-
 using namespace std;
 
-void getExpenseDetails(vector<Expense> &expenses);
-
-int main()
-{
-    vector<Expense> myExpenses;
-    string filename = "expenses_log.txt";
-
-    getExpenseDetails(myExpenses);
-
-    saveExpensesToFile(myExpenses, filename);
-
-    cout << "Program finished. Check the '" << filename << "' file for details." << endl;
-
-    return 0;
-}
 
 void getExpenseDetails(vector<Expense> &expenses)
 {
@@ -43,4 +27,18 @@ void getExpenseDetails(vector<Expense> &expenses)
         cout << "Do you want to add another expense? (y/n): ";
         cin >> choice;
     } while (choice == 'y' || choice == 'Y');
+}
+
+int main()
+{
+    vector<Expense> myExpenses;
+    string filename = "expenses_log.txt";
+
+    getExpenseDetails(myExpenses);
+
+    saveExpensesToFile(myExpenses, filename);
+
+    cout << "Program finished. Check the '" << filename << "' file for details." << endl;
+
+    return 0;
 }

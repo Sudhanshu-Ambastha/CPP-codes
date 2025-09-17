@@ -4,7 +4,7 @@
 
 void saveExpensesToFile(const vector<Expense> &expenses, const string &filename)
 {
-    ofstream outFile(filename, ios::app); // Open file in append mode
+    ofstream outFile(filename, ios::app);
     if (!outFile.is_open())
     {
         cout << "Error opening file: " << filename << endl;

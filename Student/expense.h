@@ -13,11 +13,9 @@ public:
     double amount;
     string date;
 
-    // Default constructor
     Expense() : amount(0.0) {}
 
-    // Parameterized constructor
     Expense(string cat, double amt, string dt) : category(cat), amount(amt), date(dt) {}
 };
 
-#endif // EXPENSE_H
+#endif
