@@ -1,9 +1,8 @@
 #include <iostream>
 #include <vector>
-#include "expense.h"
-#include "file_handler.h"
+#include "expense.hpp"
+#include "file_handler.hpp"
 using namespace std;
-
 
 void getExpenseDetails(vector<Expense> &expenses)
 {

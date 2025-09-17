@@ -3,7 +3,7 @@
 
 #include <string>
 #include <vector>
-#include "expense.h"
+#include "expense.hpp"
 
 using namespace std;
 
